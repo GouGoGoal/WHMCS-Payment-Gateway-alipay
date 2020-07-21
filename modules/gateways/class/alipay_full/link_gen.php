@@ -103,6 +103,7 @@ class alipayfull_link {
         "transport" => "https",
         "payment_type" => 1,
         "return_url" =>  $params['systemurl']."/modules/gateways/callback/alipay_full/return.php",
+         //回调通知地址
         "notify_url" => $params['systemurl']."/modules/gateways/callback/alipay_full/notify.php",
         "cacert" => dirname(__FILE__) . "/alipay_mapi/cacert.pem",
         ];
